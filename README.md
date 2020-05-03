@@ -47,7 +47,7 @@ It's possible to sniff the data after poisoning the arp table of the target devi
 #### Windows
 Install Linux or get a Mac and continue.
 
-#### Linux
+#### Ubuntu
 From: https://github.com/moxie0/sslstrip
 
 Install arpspoof
