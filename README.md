@@ -3,7 +3,7 @@
 Make sure you have docker and wireshark installed.
 
 #### Windows:
-Install Linux or get a Mac and continue.
+Download and install docker and wireshark from their websites.
 
 #### Ubuntu:
 ```
