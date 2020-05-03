@@ -1,3 +1,5 @@
+# Install
+
 Make sure you have docker and wireshark installed.
 
 ### Windows:
@@ -13,10 +15,27 @@ apt-get install docker wireshark
 brew install docker wireshark
 ```
 
+# Usaage
 
-1. Initialize the server for the first time `./init.sh`
-2. Start the server `./start.sh`
-3. Create a client `./create_client.sh client_name`
-4. Transfer the client's configuration file to the target device.
-5. Connect to the VPN server from the target device (search for OpenVPN on the Appstore).
-6. Run `./wireshark.sh`.
+Initialize the server for the first time.
+```
+./init.sh server_ip
+```
+
+Start the server
+```
+./start.sh
+```
+
+Create a client
+```
+./create_client.sh client_name
+```
+
+Transfer the client's configuration file to the target device.
+
+Connect to the VPN server from the target device (search for OpenVPN on the Appstore).
+Open wireshark and start sniffing
+```
+./wireshark.sh
+```
