@@ -22,12 +22,12 @@ Initialize the server for the first time.
 ./init.sh server_ip
 ```
 
-Start the server
+Start the server.
 ```
 ./start.sh
 ```
 
-Create a client
+Create a client.
 ```
 ./create_client.sh client_name
 ```
@@ -35,7 +35,8 @@ Create a client
 Transfer the client's configuration file to the target device.
 
 Connect to the VPN server from the target device (search for OpenVPN on the Appstore).
-Open wireshark and start sniffing
+
+Open wireshark and start sniffing.
 ```
 ./wireshark.sh
 ```
