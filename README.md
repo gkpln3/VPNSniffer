@@ -2,15 +2,15 @@
 
 Make sure you have docker and wireshark installed.
 
-### Windows:
+#### Windows:
 Install Linux or get a Mac and continue.
 
-### Ubuntu:
+#### Ubuntu:
 ```
 apt-get install docker wireshark
 ```
 
-### Mac:
+#### Mac:
 ```
 brew install docker wireshark
 ```
@@ -44,10 +44,12 @@ Open wireshark and start sniffing.
 # Sniffing without VPN
 It's possible to sniff the data after poisoning the arp table of the target device, although a few extra steps are required to allow the traffic to pass through.
 
-### Windows
+#### Windows
 Install Linux or get a Mac and continue.
 
-### Linux
+#### Linux
+From: https://github.com/moxie0/sslstrip
+
 Install arpspoof
 ```
 apt-get install arpspoof
@@ -63,8 +65,9 @@ Setup iptables to intercept HTTP requests (as root):
 iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port <yourListenPort>
 ```
 
-### Mac
+#### Mac
 From http://iosmanbh.blogspot.com/2014/09/mac-os-x-arp-spoofing.html
+
 Install macport
 
 Install dsniff
