@@ -98,3 +98,26 @@ Example:
 sudo arpspoof -i en0 -t 192.168.1.100 192.168.1.1
 sudo arpspoof -i en0 -t 192.168.1.1 192.168.1.100
 ```
+
+# Another way (requires root access to the device, but more stable)
+Instead of arp spoofing, just login to the device and edit its arp tables.
+
+To make sure the connection will still be up, we need to enable IP forwarding (through our sniffing computer) first.
+
+#### Mac
+```
+sudo sysctl -w net.inet.ip.forwarding=1
+```
+
+#### Linux
+```
+echo "1" > /proc/sys/net/ipv4/ip_forward
+```
+
+Now log into the device and edit its arp tables using the following command:
+```
+arp -s [target] [my_computer_mac_address]
+```
+
+# Decrypt ssl communication
+See [iOS SSL Sniffer](https://github.com/gkpln3/ios_ssl_sniffer)
