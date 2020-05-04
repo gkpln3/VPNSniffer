@@ -104,6 +104,9 @@ Instead of arp spoofing, just login to the device and edit its arp tables.
 
 To make sure the connection will still be up, we need to enable IP forwarding (through our sniffing computer) first.
 
+#### Windows
+Stop... just stop...
+
 #### Mac
 ```
 sudo sysctl -w net.inet.ip.forwarding=1
