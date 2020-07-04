@@ -1,2 +1,2 @@
-FROM kylemanna/openvpn 
-RUN apk add tcpdump
+FROM kylemanna/openvpn
+RUN apk add tcpdump tshark
