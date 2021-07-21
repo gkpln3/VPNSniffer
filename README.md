@@ -44,11 +44,11 @@ Open wireshark and start sniffing.
 ## Creating a VPN tunnel over USB (USB reverse tethering)
 This enables you to pipe internet connection through USB to the mobile phone, even without wifi.
 
-Good for when using a firewalled network, or through mobile tethering on iOS (which blocks all connections to devices inside the network).
+Good when using a firewalled network, or through mobile tethering on iOS (which blocks all connections to devices inside the network).
 
 Requires root (or at least ssh to the phone).
 
-We will need to start the server in the exact same way, but with using TCP (since ssh can only create a TCP tunnel).
+We need to start the server in the exact same way, but with using TCP (since ssh can only create a TCP tunnel).
 
 Go to the USB folder, and follow the same steps seen in Usage.
 
